@@ -49,16 +49,16 @@
 <script type="text/javascript">
 	function searchMeaning($q){
 		 var xhttp = new XMLHttpRequest();
-
+		
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
      document.getElementById("meaning").innerHTML = xhttp.responseText;
     document.getElementById("fsmeaning").style.display=block;
     }
   };
-  xhttp.open("GET", "get_meaing.pp?request="+$q, true);
+  xhttp.open("GET", "get_meaning.php?request="+$q, true);
   xhttp.send();
-	
+	}
 </script>
 
 
